@@ -1,0 +1,29 @@
+.Profile{
+    width:60%;
+    margin: auto;
+    position:absolute;
+    left:8%;
+    right:20%;
+    top:10%;
+}
+.space{
+    margin-left: 10px;
+}
+.profile_pic{
+    position: absolute;
+    left:80%;
+    top:10%;
+    margin: auto;
+    width: 50%;
+}
+.profile_card{
+    height: 150px;
+    width: 35%;
+}
+.profile-card-body{
+    height: 200px;
+}
+.profile_picture{
+    height: 125px;
+    width: auto;
+}

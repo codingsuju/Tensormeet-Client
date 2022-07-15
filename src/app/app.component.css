@@ -1,0 +1,35 @@
+.app_left{
+    float: left;
+    top: 25%;
+    left: 20%;
+    margin: auto;
+
+    position:absolute;
+}
+.app_right{
+    width: 30%;
+    margin: auto;
+}
+.Container_login{
+    width: 15%;
+    position: absolute;
+    top:25%;
+    left: 50%;
+}
+.Container_register{
+    width:15%;
+    position: absolute;
+    left:65%;
+    top:25%;
+}
+.Home_Container{
+    margin-top: 20px;
+    position: absolute;
+    top: 0%;
+    left:5%;
+}
+.Container_side_by_side{
+    float: left;
+    border-color: black;
+    width: 240px;
+}

@@ -1,0 +1,10 @@
+.register{
+    margin:auto;
+    width: 30%;
+    position: absolute;
+    left:50%;
+    top: 30%;
+}
+.register_submit_button{
+    margin-top: 10px;
+}

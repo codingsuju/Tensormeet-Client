@@ -1,0 +1,33 @@
+.post_text{
+    position: absolute;
+    margin: auto;
+    width: 70%;
+    top:5%;
+    left:5%;
+}
+.post_create{
+    position: absolute;
+    margin: auto;
+    top:7.5%;
+    left:76%;
+
+}
+.post{
+    position: absolute;
+    margin: auto;
+    top:15%;
+    left: 8%;
+}
+.user_post{
+    position: absolute;
+    margin: auto;
+    left:7.5%;
+}
+.space{
+    margin-left: 5px;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:beige;
+}

@@ -1,0 +1,17 @@
+<div class="edit">
+	<form role="form" (submit)="save()">
+		<div class="form-group">
+			<label for="profilename">Profile name:</label> <input type="text"
+				class="form-control" id="profilename" name="profilename" [(ngModel)]="profile.profilename"/>
+		</div>
+		<div class="form-group">
+			<label for="bio">Bio:</label> <input type="text"
+				class="form-control" id="bio" name="bio" [(ngModel)]="profile.bio"/>
+		</div>
+		<div class="form-group">
+			<label for="interest">Interest:</label> <input type="text"
+				class="form-control" id="interest" name="interest" [(ngModel)]="profile.interest"/>
+		</div>
+		<button type="submit" class="btn btn-primary space">Save</button>
+	</form>
+</div>

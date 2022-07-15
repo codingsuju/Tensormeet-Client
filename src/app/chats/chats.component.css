@@ -1,0 +1,18 @@
+.chat{
+    position: absolute;
+    margin: auto;
+    top:13%;
+    left:25%;
+    right:35%;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:beige;
+}
+.space{
+    margin-left: 5px;
+}
+.chat_username{
+    width: 250px;
+}

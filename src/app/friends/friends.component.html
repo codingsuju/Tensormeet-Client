@@ -1,0 +1,17 @@
+<div class="friend">
+	<div *ngFor="let profile of profiles">
+			<div class="card" style="width: 75rem;">
+				<div class="card-body">
+				<button (click)="viewProfile(profile.username)" class="btn btn-primary friend_username">{{profile.username}}</button>
+				  <div class="card" style="width: 70rem;">
+					<div class="card-body">
+					  <p class="card-text">{{profile.profilename}}</p>
+					  <p class="card-text">{{profile.bio}}</p>
+					</div>
+				  </div>
+				  <button (click)="removeFriend(profile.username)" class="btn btn-danger space">Remove Friend</button>
+				  <button (click)="sendMessage(profile.username)" class="btn btn-success space">Send Message</button>
+				</div>
+			</div>
+	</div>
+</div>

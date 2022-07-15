@@ -1,0 +1,12 @@
+.edit{
+    margin: auto;
+    left: 20%;
+    top: 13%;
+    position: absolute;
+}
+.form-control{
+    width: 1000px;
+}
+.space{
+    margin-top: 10px;
+}

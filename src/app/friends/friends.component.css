@@ -1,0 +1,17 @@
+.friend{
+    position: absolute;
+    margin: auto;
+    top:13%;
+    left: 8%;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:beige;
+}
+.space{
+    margin-left: 5px;
+}
+.friend_username{
+    width: 96%;
+}

@@ -1,0 +1,33 @@
+<div>
+	<form role="form" (submit)="createPost()">
+		<div class="form-group">
+			<div class="createPost">
+				<div class="post_text">
+					<label for="text"></label> <input type="text"
+					class="form-control" id="text" name="text" [(ngModel)]="text"/>
+				</div>
+				<div class="post_create">
+					<button type="submit" class="btn btn-primary">Create</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="post">
+	<div *ngFor="let post of posts">
+			<div class="card" style="width: 75rem;">
+				<div class="card-body">
+				  <button (click)="viewProfile(post.username)" class="btn btn-primary post_username">{{post.username}}</button>
+				  <div class="card" style="width: 70rem;">
+					<div class="card-body">
+					  <p class="card-text">{{post.status}}</p>
+					</div>
+				  </div>
+				  <button class="btn btn-success space">Like</button>
+				  <button class="btn btn-success space">Comment</button>
+				  <button class="btn btn-success space">Share</button>
+				</div>
+			</div>
+	</div>
+</div>
+

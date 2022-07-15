@@ -1,0 +1,25 @@
+<div class="message">
+    <div *ngFor="let message of messages">
+        <div class="card" style="width: 75rem;">
+            <div class="card-body">
+                <button (click)="viewProfile(message.sender)" class="btn btn-primary message_username">{{message.sender}}</button>
+                <div class="card" style="width: 70rem;">
+                    <div class="card-body">
+                        <div>
+                            <h5>{{message.text}}</h5>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form role="form" (submit)="sendMessage()">
+            <div class="form-group">
+                <label for="text_message"></label> <input type="text"
+                    class="form-control" id="text_message" name="text_message" [(ngModel)]="text"/>
+                <button type="submit" class="btn btn-primary space">Send</button>
+            </div>
+        </form>
+      </div>
+</div>

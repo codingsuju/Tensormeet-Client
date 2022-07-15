@@ -1,0 +1,11 @@
+<div class="chat">
+	<div *ngFor="let receiver of receivers">
+			<div class="card" style="width: 50rem;">
+				<div class="card-body">
+				   <button (click)="viewProfile(receiver.username)" class="btn btn-primary chat_username">{{receiver.username}}</button>
+				   <button (click)="viewMessage(receiver.username)" class="btn btn-success space">View messages</button>
+                   <button class="btn btn-danger space">Delete chat</button>
+				</div>
+			</div>
+	</div>
+</div>

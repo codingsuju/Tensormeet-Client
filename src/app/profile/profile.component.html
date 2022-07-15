@@ -1,0 +1,45 @@
+<div class="Profile">
+    <div class="card" style="width: 60rem;">
+        <div class="card-body">
+          <div class="card" style="width: 55rem;">
+            <div class="profile-card-body">
+              <div class="profile_pic">
+                <div class="card profile_card">
+                    <div class="card-body">
+                        <img alt="Profile" class="profile_picture" src="./../assets/profile.jpg">
+                    </div>
+                </div>
+              </div>
+              <button class="btn btn-success">{{profile.username}}</button>
+              <h5 class="card-text">{{profile.profilename}}</h5>
+              <ul>
+                <li><h5 class="card-text">{{profile.bio}}</h5></li>
+                <li><h5>Interested in {{profile.interest}}</h5></li>
+                <li><h5>Tensormeet active user</h5></li>
+              </ul>
+            </div>
+          </div>
+          <div *ngIf="this.viewType===1">
+            <button (click)="editProfile()" class="btn btn-primary space">Edit Profile</button>
+            <button (click)="sendMessage(profile.username)" class="btn btn-success space">Send Message</button>
+        </div>
+        <div *ngIf="this.viewType===2">
+            <button (click)="removeFriend()" class="btn btn-danger">Remove Friend</button>
+            <button (click)="sendMessage(profile.username)" class="btn btn-success space">Send Message</button>
+        </div>
+        <div *ngIf="this.viewType===3">
+            <button (click)="acceptFriend()" class="btn btn-success space">Accept</button>
+            <button (click)="sendMessage(profile.username)" class="btn btn-success space">Send Message</button>
+        </div>
+        <div *ngIf="this.viewType===4">
+            <button (click)="unsendFriendRequests()" class="btn btn-primary space">Friend request sent</button>
+            <button (click)="sendMessage(profile.username)" class="btn btn-success space">Send Message</button>
+        </div>
+        <div *ngIf="this.viewType===5">
+            <button (click)="addFriend()" class="btn btn-primary space">Add Friend</button>
+            <button (click)="sendMessage(profile.username)" class="btn btn-success space">Send Message</button>
+        </div>
+        </div>
+    </div>
+</div>
+			
