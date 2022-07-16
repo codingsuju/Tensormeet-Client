@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://tensormeet-server.herokuapp.com'
+  API_URL: 'https://localhost:8080'
 };
 
 /*
