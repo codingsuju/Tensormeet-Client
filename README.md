@@ -1,4 +1,5 @@
-# Client
+# Tensormeet
+Tensormeet-Client is a client side app for Tensormeet social media server developed as single page UI in Angular Web Framework to interact with REST APIs using Login, Register, News feed, Message, Global and Profile components.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
