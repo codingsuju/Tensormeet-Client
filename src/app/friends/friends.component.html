@@ -1,4 +1,23 @@
 <div class="friend">
+	<button class="btn btn-primary">Friend requests</button>
+	<div *ngIf="requests.length===0" class="card" style="width: 75rem;">
+		<div class="card-body">
+			<p class="card-text">No new requests</p>
+		</div>
+	</div>
+	<div *ngFor="let request of requests">
+		<div class="card" style="width: 75rem;">
+			<div class="card-body">
+			   <button (click)="viewProfile(request.username1)" class="btn btn-primary friend_username">{{request.username1}}</button>
+			</div>
+		</div>
+    </div>
+	<button class="btn btn-success">Friends</button>
+	<div *ngIf="friends.length===0" class="card" style="width: 75rem;">
+		<div class="card-body">
+			<p class="card-text">No friends yet. Connect with People from Global</p>
+		</div>
+	</div>
 	<div *ngFor="let profile of profiles">
 			<div class="card" style="width: 75rem;">
 				<div class="card-body">

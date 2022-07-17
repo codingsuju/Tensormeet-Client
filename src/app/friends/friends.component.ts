@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Connection } from '../model/connection';
 import { Profile } from '../model/profile';
 import { Username } from '../model/username';
 import { AppService } from '../service/app.service';
@@ -14,10 +15,12 @@ import { ProfileService } from '../service/profile.service';
 export class FriendsComponent implements OnInit {
   friends:Username[]=[];
   profiles:Profile[]=[];
+  requests:Connection[]=[];
   constructor(private app:AppService,private router:Router,private friendService:FriendService,private profileService:ProfileService) { }
 
   ngOnInit(): void {
     this.getFriends();
+    this.getRequests();
   }
   getFriends(){
     this.friendService.getFriends(this.app.user.getValue().username).subscribe((response)=>{
@@ -41,5 +44,10 @@ export class FriendsComponent implements OnInit {
   }
   sendMessage(receiver:String){
     this.router.navigate([this.app.user.getValue().username,'message',{receiver:receiver}])
+  }
+  getRequests(){
+    this.friendService.getPendingRequests().subscribe((response)=>{
+      this.requests=response;
+    });
   }
 }
